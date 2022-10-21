@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 const layout = ({
   title = "Blog on Next.js - Simple Version",
   description = "",
@@ -8,13 +9,11 @@ const layout = ({
     <>
       <Head>
         <title>{title} || ''</title>
-
-        <meta>
-          name="description" content={description || "Blog on Next.js"}
-        </meta>
-        <meta>
-          name='og:description' content={description || "Blog on Next.js"}
-        </meta>
+        <link
+          rel="shortcut icon"
+          href="/blognjs/public/title.png"
+          type="image/png"
+        ></link>
       </Head>
       <header>
         <img src="/share-post.png" alt="Reload the page please"></img>
@@ -28,5 +27,5 @@ const layout = ({
   );
 };
 
-export default Layout;
+export default layout;
 // adding <header></header> and <footer></footer>
