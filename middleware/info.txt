@@ -1,0 +1,5 @@
+----------------------------------
+NextJS - SSR renderging (wrapping React).
+Two-way renderging : client/server.
+The importance of clients beign redirected from source engine to blog type application or E-shop.
+----------------------------------
