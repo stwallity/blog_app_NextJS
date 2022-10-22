@@ -49,3 +49,31 @@ h1
     color: #444
 
 
+.blog-item
+    background-color: #fff
+    box-shadow: 0 0 3px 7 px rgba(0,0,0, .06)
+    border-radius: 15px
+    padding: 10px
+    >h5
+        margin:0
+        margin-bottom: 10px
+        text-transform: capitalize
+        color: #333
+        font-size: 16px
+    >p
+        text-transform: capitalize
+        color: #555
+        font-size: 14px
+    >.text-align-right
+        text-align: right
+        >a
+            background-color: $blue_color_var
+            text-decoration: none
+            float: right
+            display: inline-block
+            font-size: 14px
+            transition: .3s ease
+            border-radius: 10px
+            padding: 10px 20px
+            &:hover
+                background-color: darken($blue_color_var, 5%)

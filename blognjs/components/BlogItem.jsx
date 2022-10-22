@@ -6,9 +6,11 @@ const BlogItem = ({ title, description, id }) => {
     <div className="blog-item">
       <h6>{title}</h6>
       <p>{description}</p>
-      <Link href="/blogjs/[id]" as={`/blognjs/${id}`}>
-        <a>Прочитать</a>
-      </Link>
+      <div className="text-align-right">
+        <Link href="/blogjs/[id]" as={`/blognjs/${id}`}>
+          <a>Прочитать</a>
+        </Link>
+      </div>
     </div>
   );
 };
